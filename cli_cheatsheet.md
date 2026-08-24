@@ -34,3 +34,21 @@ Get-ChildItem -Recurse -Filter *.py => Finds all Python files in the current fol
 Get-ChildItem -Recurse -Filter *.py | Select-String "def " => Finds where functions (def) are written in Python files.
 Get-ChildItem -Recurse -File | Select-String "print" | Measure-Object => Counts how many lines contain print.
 (Get-ChildItem -Recurse -Filter *.py).Count => Counts the total number of Python files.
+
+
+4) Working With Files
+dir > contents.txt => Saves the output of dir into contents.txt.
+Get-Content contents.txt => Shows what's written inside contents.txt.
+
+
+
+5) Merge Conflict
+Step-1 => git switch main : Go To Main
+Step-2 => git merge feature : Merge Feature into Main
+Step-3 => git status : Check Wich File has in conflict
+Step-4 => open the conflict file
+Step-5 => choose a code which you want to keep
+Step-6 => git add .
+Step-7 => git commit -m "merge conflict"
+Step-8 => git status
+Step-9 => git log --oneline --graph --all
