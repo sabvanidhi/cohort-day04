@@ -1,1 +1,1 @@
-hello,
+I am Nidhi and I want to learn AI/ML.
